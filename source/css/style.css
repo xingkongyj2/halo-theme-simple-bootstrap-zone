@@ -1,0 +1,421 @@
+/*
+所有页面的总体样式
+Status: OK
+ */
+
+body{
+  font-family: 'Merriweather', serif !important;
+}
+
+/*a标签获取焦点的时候不要有边框，解决图片聚焦边框的问题*/
+a:focus {
+    border: none;
+}
+
+/*iframe默认全部隐藏*/
+iframe {
+    display: none;
+}
+
+/*选中样式*/
+::selection {
+    background: #ed393e !important;
+    color: #ffffff !important;
+}
+
+/*火狐浏览器选中样式*/
+::-moz-selection {
+    background: #ed393e !important;
+    color: #ffffff !important;
+}
+
+/*滚动条的控制按钮*/
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/*定义滚动条高宽及背景-高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*定义滚动条轨道*/
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .125);
+}
+
+/*返回顶部*/
+.back-top {
+    position: fixed;
+    display: none;
+    z-index: 20;
+    bottom: 1.5rem;
+    right: 1rem;
+    background: #ed393e;
+    width: 2rem;
+    height: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.8rem;
+    border-radius: 1rem;
+    cursor:pointer;
+}
+
+/*LG以下的样式*/
+@media (max-width: 992px) {
+
+    /*返回顶部在小屏幕下的显示*/
+    .back-top {
+        right: .5rem !important;
+    }
+}
+
+/*分页的字体*/
+.pagination {
+    font-family: 'Merriweather', serif;
+}
+
+/*分页中的链接样式*/
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #6c757d;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+/*分页链接划过的样式*/
+.page-link:hover {
+    z-index: 2;
+    color: #6c757d;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+/*分页项激活的样式*/
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #ed393e;
+    border-color: #ed393e;
+}
+
+/*搜索按钮的样式*/
+#search button {
+    border: 1px solid #ced4da;
+}
+
+/*扩充样式*/
+.mb-4point5 {
+    margin-bottom: 2rem !important;
+}
+
+/* 弹出层弹出后禁止页面滚动 */
+.no-scroll,
+.no-scroll body {
+    overflow: hidden;
+}
+
+/* 弹出层弹出后禁止页面滚动 */
+.no-scroll body {
+    position: relative;
+}
+
+/*自定义开始==========================================================================*/
+.navbar-brand {
+    font-size: 2.8rem !important;
+    color:#ed393e !important;
+    margin-top: -.5rem;
+}
+
+.border-bottom{
+  border-bottom: 1px dotted #dee2e6 !important;
+}
+
+.link-grid .border-bottom{
+  border-bottom: 1px dotted #dee2e6 !important;
+  text-align: center;
+}
+
+.link-grid .pt-3 {
+    padding-top: 20px!important;
+}
+
+.row{
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  margin: 0 auto !important;
+}
+
+#search button{
+  font-size:15px !important;
+}
+
+#search button:hover {
+    background: #ed393e;
+    border-color:#ed393e;
+}
+
+input{
+    outline-color: invert !important;
+	outline-style: none  !important;
+	outline-width: 0px !important;
+	text-shadow: none !important;
+	-webkit-appearance: none !important;
+	-webkit-user-select: text !important;
+	outline-color: transparent !important;
+	box-shadow: none !important;
+    font-size:15px !important;
+}
+
+input:focus{
+  border:0.5px solid #ed393e !important;
+}
+
+.nav-link{
+  color: #292929 !important;
+}
+
+.nav-link:hover{
+  color:#ed393e !important;
+}
+
+/*
+.mb, .mt {
+    height: 0;
+    width: 100%;
+    left: 0;
+}
+
+.mt {
+    top: 0;
+    height: .5rem;
+}
+
+.mask {
+    position: fixed;
+    z-index: 999;
+    border: calc(.5rem/ 2) solid #ed393e;
+    background: #ed393e;
+    pointer-events: none;
+}
+
+.mb {
+    bottom: 0;
+    height: .5rem;
+}
+
+.ml, .ml2 {
+    left: 0;
+    width: .5rem;
+}
+
+.mv {
+    bottom: 0;
+    height: 80vh;
+    width: 0;
+}
+
+.mr, .mr2 {
+    right: 0;
+    width: .5rem;
+}
+
+.ml2, .mr2 {
+    bottom: none;
+    top: 0;
+}
+
+.ml, .ml2 {
+    left: 0;
+    width: .5rem;
+}
+*/
+
+.py-3 {
+    padding-bottom: 0rem !important; 
+}
+
+.p-0{
+  padding-left: 0rem !important; 
+}
+
+.text-muted {
+    color: #1e1f20!important;
+}
+
+.pb-3{
+    padding-top: 1rem;
+}
+
+.container-fluid{
+    padding-right: 22px !important;
+}
+
+#left {
+    margin: 0 auto;
+}
+
+.alert-danger {
+    color: #ffffff;
+    background-color: #ed393e;
+    border-color: #ed393e;
+}
+
+.alert-secondary {
+    color: #ffffff;
+    background-color: #ed393e;
+    border-color: #ed393e;
+}
+
+.alert-success {
+    color: #ffffff;
+    background-color: #ed393e;
+    border-color: #ed393e;
+}
+
+.fa-inbox {
+    color: #ed393e !important;
+}
+
+.mr-3 .fa-calendar-alt{
+  color:#ed393e;
+}
+
+.list-item .fa-eye{
+  color:#ed393e;
+}
+
+.card-header:first-child {
+    border-radius: 0 !important;
+}
+
+.card {
+    border: 0 !important;
+}
+
+.card-header {
+    background-color: #ed393e !important;
+    color: #ffffff !important;
+    border-bottom: 0;
+}
+
+@media (min-width: 992px)
+{
+    .col-lg-4 {
+        max-width: 28.333333% !important;
+    }
+
+        #left #right {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        margin-right: 10px!important;
+        margin-left: 0px!important;
+        text-align: right;
+    }
+
+    #catalogBox {
+        line-height: 1.5em;
+        margin-left: 30px;
+        font-size: 12px;
+        position: fixed;
+        z-index: 0;
+        display: inline-block;
+        text-align: left;
+        right: auto !important;
+        margin-top: 100px;
+    }
+
+    .catalogBoxBoder{
+          border: 1px solid rgba(221, 221, 221, 0.32);
+    }
+
+        .pl-4{
+        padding-right: 1.5rem!important;
+    }
+
+    .pt-4{
+        padding-top: 1rem!important;
+    }
+
+        p {
+        margin-bottom: .2rem; 
+    }
+}
+
+#content {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.mt-4{
+    margin-top: 1rem!important;
+}
+
+.navbar-toggler {
+    border: 0px solid transparent !important;
+}
+
+.fa-tags{
+  color:#ed393e !important;
+}
+
+#editarticle{
+  color:#1e1f20!important;
+}
+
+.fa-folder-open{
+  color:#ed393e !important;
+}
+
+.fa-pencil-alt{
+  color:#ed393e !important;
+}
+
+.d-inline-block .fa-pencil-alt{
+  color:#1e1f20!important;
+}
+
+.d-inline-block .fa-folder-open {
+    color: #1e1f20!important;
+}
+
+.mb-5{
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+}
+
+.card-body {
+    padding: 0 0 !important;
+}
+
+.hljs-comment, .hljs-quote {
+    font-style: normal !important;
+}
+
+.pt-3{
+    padding-top: 0rem!important;
+}
+
+small {
+    font-size: .9rem!important;
+}
+
+.text-body {
+    color: #000000!important;
+}
+
+#changePost{
+  margin-top: 5rem!important;
+}
+
+.sheet_page h1{
+  font-family: Lato,Noto Sans SC,-apple-system,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
