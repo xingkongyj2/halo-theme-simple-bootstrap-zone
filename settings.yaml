@@ -5,32 +5,32 @@ general:
       name: scrollbar_background_color
       label: 滚动条颜色
       type: color
-      default: '#6c757d'
+      default: '#ed393e'
       placeholder: '滚动条颜色'
     link_color:
       name: link_color
       label: 链接颜色
       type: color
-      default: '#007bff'
+      default: '#ed393e'
       placeholder: '链接颜色'
     hover_color:
       name: hover_color
       label: 鼠标滑过颜色
       type: color
-      default: '#dc3545'
+      default: '#ed393e'
       placeholder: '鼠标滑过颜色'
     progress_color:
       name: progress_color
       label: 阅读进度条颜色
       type: color
-      default: '#dc3545'
+      default: '#ed393e'
       placeholder: '阅读进度条颜色'
     open_rss:
       name: open_rss
       label: 是否启用RSS
       type: radio
       data-type: bool
-      default: true
+      default: false
       options:
         - value: true
           label: 启用
@@ -41,7 +41,7 @@ general:
       label: 是否使用阅读进度条
       type: radio
       data-type: bool
-      default: true
+      default: 关闭
       options:
         - value: true
           label: 显示
@@ -63,7 +63,7 @@ general:
       label: 是否启用分享
       type: radio
       data-type: bool
-      default: true
+      default: false
       options:
         - value: true
           label: 启用
@@ -88,7 +88,7 @@ user_info:
       name: user_location
       label: 位置信息
       type: text
-      default: '北京 海淀'
+      default: '浙江 杭州'
       placeholder: '住址'
     github_url:
       name: github_url
@@ -177,5 +177,5 @@ code:
       name: code_font_family
       label: 代码字体(注意引号)
       type: text
-      default: '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
+      default: '"Merriweather", serif'
       placeholder: '代码字体'
