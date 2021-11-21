@@ -186,7 +186,7 @@ input:focus{
   color:#ed393e !important;
 }
 
-/*
+/*========边框开始
 .mb, .mt {
     height: 0;
     width: 100%;
@@ -236,7 +236,7 @@ input:focus{
     left: 0;
     width: .5rem;
 }
-*/
+========边框结束*/
 
 .py-3 {
     padding-bottom: 0rem !important; 
